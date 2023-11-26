@@ -1,0 +1,273 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+body {
+  background: #f1f1f1;
+}
+.navbar {
+  background: #1c181d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.search {
+  background-color: #616161;
+  display: flex;
+  width: 370px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 8px;
+  gap: 6px;
+  border: 1px solid #b5b5b5;
+  margin: 0 10px;
+}
+.search:focus {
+  border: 1px solid #e3e3e3;
+}
+.search:active {
+  border: 1px solid #e3e3e3;
+}
+.search svg {
+  width: 13px;
+  height: 13px;
+  color: #b5b5b5;
+}
+.search:hover {
+  border: 1px solid #e5e5e5;
+}
+.search input {
+  background: inherit;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  width: 100%;
+  font-size: 18px;
+}
+input::placeholder {
+  color: #b5b5b5;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.userbar {
+  display: flex;
+  justify-content: center;
+}
+
+.userbar div {
+  padding: 5px;
+  border-radius: 6px;
+  background: #616161;
+  cursor: pointer;
+}
+.userbar div:hover {
+  background: #808080;
+}
+.userbar div svg {
+  color: #ffffff;
+}
+.username {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+  margin: 0 10px;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.username p {
+  background: #32e995;
+  color: #000000;
+  margin-left: 10px;
+  padding: 2px 5px;
+  border-radius: 6px;
+}
+
+.bag_logo {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .letter_logo {
+    display: none;
+  }
+  .bag_logo {
+    display: block;
+  }
+  .username h6 {
+    display: none;
+  }
+  .username {
+    padding: 0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 500px;
+}
+.selectplan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 0 10px;
+  color: #ffffff;
+}
+.removeplan {
+  display: none;
+  height: 0;
+}
+.btnsvg {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.btnsvg button {
+  /* position: absolute; */
+  padding: 0 5px;
+  height: 25px;
+  margin-right: 10px;
+  pointer: cursor;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btnsvg button:hover {
+  background: #f7f7f7;
+  border: none;
+}
+
+.btnsvg button:focus {
+  border: 1px solid #0d99ff;
+}
+.setupguide {
+  position: relative;
+  background: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0.6px 1px rgba(0, 0, 0, 0.5);
+}
+.svg_btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: transparent;
+  border: none;
+}
+.completed {
+  margin-top: 10px;
+  display: flex;
+}
+
+.completed .box {
+  width: 100px;
+  height: 3px;
+  border-radius: 8px;
+  background: #c8c8c8;
+  margin: 8px 5px;
+}
+.show_btn {
+  position: relative;
+  width: 40px;
+  background: transparent;
+  border: none;
+}
+.show_btn svg {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+.text_contents {
+  display: flex;
+  margin-top: 15px;
+}
+
+.store_img {
+  max-width: 120px;
+  height: 100px;
+  object-fit: cover;
+}
+.content {
+  margin-left: 10px;
+}
+.content h4 {
+  padding: 10px 0;
+}
+.content p {
+  padding-bottom: 10px;
+  font-size: 0.8rem;
+}
+.content p span {
+  color: #0037ff;
+}
+
+.customized_btn button {
+  margin: 6px 27px;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #322f33;
+  color: #ffffff;
+}
+.customized_btn span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.customized_btn button:hover {
+  background: #616161;
+}
+.customized_btn button:focus {
+  border: 2px solid #005bd3;
+}
+
+.display_content {
+  display: none;
+}
+.contenter {
+  position: relative;
+  background: #f3f3f3;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.defaults {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.hide1 {
+  display: none;
+}
+.customized_h4 {
+  position: absolute;
+  top: 10px;
+  left: 41px;
+}
+
+// popup style
+
+.section_container {
+  width: 600px;
+  background: red;
+  box-shadow: 0 2px 4px #000000;
+  height: 600px;
+  padding: 30px;
+}
